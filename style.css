@@ -1,0 +1,24 @@
+.main-header{
+    text-align: center;
+}
+.date{
+    margin-top: -20px;
+    display: block;
+    color: gray;
+}
+.problem-solution, .problem-statement{
+    padding: 0px 50px;
+}
+.code{
+    background-color: rgb(206, 206, 206);
+    padding: 20px;
+}
+.contact-container{
+    display: flex;
+    justify-content: space-around;
+    background-color: darkgray;
+    padding: 30px 20px;
+}
+.contact{
+    line-height: 40px;
+}

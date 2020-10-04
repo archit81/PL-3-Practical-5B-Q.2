@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Programming Genius</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="main-header">Programming Genius</h1>
+    </header>
+    <hr />
+    <main>
+
+        <header class="problem-statement">
+            <h3>Program to count digits in a number</h3>
+            <small class="date">Last updated : 01-01-2020</small>
+            <p>Write a code in any programming language that counts the
+                digits in a given number.</p>
+
+        </header>
+        <hr />
+
+        <section class="problem-solution">
+            <h4>Solution:</h4>
+            <p>We can convert <s>any number</s> the number entered by user<sup>[1]</sup> into string and then find the
+                length of the
+                string to get the number of digits
+                in the original number.
+                <br />
+                In the code below, <var>count_digits</var> will return the count of digits in the number
+                <br />
+            </p>
+
+            <pre class="code">
+<code>#include &lt;bits/stdc++.h&gt; 
+using namespace std; 
+  
+// To count the no. of digits in a number 
+void count_digits(long long int n) 
+{ 
+    // converting number to string using 
+    // to_string in C++ 
+    string num = to_string(n); 
+  
+    // calculate the size of string 
+    cout << num.size() << endl; 
+} 
+// driver function 
+int main() 
+{ 
+    // number 
+    long long int n; 
+    cin >> n;
+    count_digits(n); 
+    return 0; 
+} </code>            
+            </pre>
+            <hr />
+            <p>[1] : This solution will only work for user input between <var>-9223372036854775808 to
+                    9223372036854775807</var> .</p>
+            <p>Copy the program in your IDE and compile and run (Press <b><kbd>F11</kbd></b> in <em>DevC++</em> OR
+                <b><kbd>F9</kbd></b> in <em>CodeBlocks</em> to Compile & execute) the program. </p>
+            <strong>Sample Input :</strong>
+            <br />
+            <pre class="code"><samp>345289467</samp></pre>
+            <strong>Sample Output :</strong>
+            <br />
+            <pre class="code"><samp>Number of digits : 9</samp></pre>
+            <strong>Variables used :</strong>
+            <p>
+                <b>n</b> : Variable to store the number (base<sub>10</sub>) whose digit count is to be found.
+                <br />
+                <b>count_digits</b> : Function to calculate the number of digits in the passed parameter.
+            </p>
+            <strong>Time Complexity :</strong>
+            <pre class="code"><samp>O(N)</samp></pre>
+            where <var>N</var> is the number of digits in given input <var>n</var>.</p>
+            <strong>References :</strong>
+            <ul>
+                <li>
+                    <a href="https://www.geeksforgeeks.org/program-count-digits-integer-3-different-methods/">Geeks for
+                        Geeks</a>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <br>
+    <hr />
+
+    <footer>
+        <h3>Author Contact Information</h3>
+        <div class="contact-container">
+            <address>
+                Heaven Colony<br />Heavenly Homes Apartment<br />Sangli Miraj Road, Vishrambag
+                <br />SANGLI, 416415<br />INDIA
+            </address>
+            <div class="timings">
+                <br /><br />
+                <b>Contact Hours: 10am-5:30pm</b>
+            </div>
+            <div class="contact">
+                <b>+91-1234567890</b>
+                <br />
+                <b>+91-233-0987654</b>
+                <br />
+                <a href="mailto:electrical@walchandsangli.ac.in">Mail me</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
